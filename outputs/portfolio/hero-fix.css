@@ -1,0 +1,141 @@
+/* Theme-aware hero and layout overrides */
+/* Ensure hero has dedicated bottom space so scanline and HUD don't collide */
+.root, :root {
+  --hero-image: url('assets/engineering-universe-hero.svg');
+}
+.hero{padding-bottom:180px}
+.hero-copy{z-index:4;position:relative}
+.galaxy-wrap{position:absolute;z-index:3;pointer-events:none}
+.topology{z-index:5}
+.scanline{bottom:36px}
+
+/* Light-mode hero treatment: keep the original asset, but add a soft ice overlay
+   so the composition reads well on pale backgrounds without using invert() */
+body.light .hero:before{
+  /* gentle desaturation + brightening; guard via opacity so theme-fix can fully override */
+  filter:saturate(.9) brightness(1.06) contrast(1.02);
+  mix-blend-mode:normal;
+  background-blend-mode:normal;
+}
+
+/* Vehicle / journey visual refinements */
+.route-vehicle{width:48px;height:24px;pointer-events:none;z-index:5}
+.route-vehicle svg{display:block;width:100%;height:100%}
+.route-vehicle .trail{stroke:rgba(121,217,255,0.35);stroke-width:6;stroke-linecap:round;filter:blur(6px)}
+.route-vehicle .glow{filter:drop-shadow(0 0 10px rgba(30,200,255,0.18))}
+
+/* Ensure no horizontal overflow introduced */
+body{overflow-x:hidden}
+
+/* Stronger overrides for the journey vehicle (SVG-based) */
+.route-vehicle{position:absolute;left:calc(var(--route-p,0) * 1%);top:155px;width:48px;height:24px;transform:translate(-50%,-50%) rotate(calc(var(--route-a,0) * 1deg));transition:left .12s linear,top .12s linear,transform .12s linear;z-index:5;pointer-events:none}
+.route-vehicle svg{display:block;width:100%;height:100%}
+.route-vehicle .trail{stroke:#79d9ff66;stroke-width:6;stroke-linecap:round;filter:blur(5px);opacity:.9}
+.route-vehicle .craft{fill:#dffaff;stroke:#79d9ff;stroke-width:.6}
+.route-vehicle .engine{fill:#a7f0ff;opacity:.95;filter:drop-shadow(0 0 6px #88e2ff)}
+
+/* Tidy up checkpoint visuals */
+.checkpoint.reached{color:#bff8ff}
+
+/* Override the original hero background to use the SVG vector asset */
+.hero:before{
+  background-image:linear-gradient(90deg,#02070df8 0%,#02070de9 34%,#02070d65 56%,#02070d10 100%),linear-gradient(180deg,#02070d26,transparent 60%,#02070dab),var(--hero-image) !important;
+  background-position:center,center,center right !important;
+  background-size:cover,cover,cover !important;
+  animation:heroAtmosphere 18s ease-in-out infinite alternate;
+}
+
+/* Light mode: gentle ice background + same SVG (SVG designed to be theme-friendly) */
+body.light .hero:before{
+  background-image:radial-gradient(circle at 74% 42%,#bce8f4 0%,#dceef3 25%,transparent 49%),linear-gradient(145deg,#edf8fa 0%,#e5f1f5 48%,#cadfe7 100%),var(--hero-image) !important;
+  background-blend-mode:screen,normal,normal;
+  filter:none !important;
+  opacity:1 !important;
+}
+
+/* Variant classes */
+body.hero-variant-a{--hero-image: url('assets/engineering-universe-hero-variant-a.svg')}
+body.hero-variant-b{--hero-image: url('assets/engineering-universe-hero-variant-b.svg')}
+body.hero-variant-c{--hero-image: url('assets/engineering-universe-hero-variant-c.svg')}
+
+/* Remove repeating grid lines and borders from galaxy for a cleaner premium look */
+.galaxy-grid{background:none !important;border:0 !important;box-shadow:none !important}
+.galaxy .orbit{border:0 !important}
+.beam, .beam:after{display:none !important}
+
+/* Remove hero thin overlay lines */
+.hero:after{display:none !important}
+
+/* Ensure title never overlaps galaxy and galaxy never reaches nav */
+.hero-copy{max-width:560px}
+.galaxy-wrap{max-width:520px;right:6%;top:18%}
+header{z-index:10}
+
+/* Stronger contrast tweaks for light mode */
+body.light h1, body.light h2, body.light p{color:var(--ink) !important}
+body.light .galaxy {filter:drop-shadow(0 16px 28px #2a9ccf1f) !important}
+body.light .route-track path{stroke:#176e8e66 !important}
+
+/* HUD and topology clarity */
+.topology{background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.01));backdrop-filter:blur(10px);border:0}
+.galaxy-hud{color:var(--muted);font-weight:600}
+
+/* Remove header nav underline or borders */
+nav a{border:0;background:transparent}
+
+/* Typography polish */
+h1{font-weight:700;letter-spacing:-0.02em}
+.eyebrow{letter-spacing:.14em}
+
+/* Mobile: keep dedicated space for journey and avoid collisions */
+@media(max-height:700px){
+  .hero{padding-bottom:220px}
+  .scanline{bottom:46px}
+}
+
+
+/* Remove top header border and subtle nav button borders for a cleaner UI */
+header{border-bottom:0 !important;background:transparent !important}
+.hud-button,.theme{border:0 !important}
+.logo .mark{border:0 !important}
+
+/* Responsive polish across requested breakpoints */
+@media(max-width:1440px){
+  .hero{padding:110px 6.5vw 140px}
+  h1{font-size:clamp(48px,6.5vw,88px)}
+  .topology{right:3vw;top:140px}
+}
+@media(max-width:1280px){
+  .hero{padding:100px 6vw 120px}
+  .galaxy-wrap{right:6%;top:22%}
+  .hud-level{right:2vw;bottom:36px}
+}
+@media(max-width:1024px){
+  .hero{padding:92px 6vw 110px}
+  .galaxy-wrap{width:420px;height:420px;right:calc(50% - 210px);top:46%}
+  .topology{display:none}
+}
+@media(max-width:768px){
+  .hero{padding:88px 6vw 90px}
+  h1{font-size:clamp(36px,9.5vw,64px)}
+  .route-vehicle{top:116px}
+}
+@media(max-width:420px){
+  .hero{padding:80px 5vw 78px}
+  .route-vehicle{scale:.8;top:96px}
+  header{height:72px}
+}
+
+/* Intro overlay styles */
+#intro-overlay{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;background:var(--bg);color:var(--ink);pointer-events:auto}
+#intro-overlay.hidden{opacity:0;visibility:hidden;transition:opacity .6s ease,visibility .6s linear}
+#intro-canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.intro-name{position:relative;z-index:3;display:flex;gap:12px;transform-style:preserve-3d;perspective:1200px}
+.intro-name .letter{display:inline-block;font-family:var(--serif);font-weight:800;font-size:clamp(36px,8vw,120px);line-height:1;color:var(--ink);text-transform:uppercase;transform-origin:center;backface-visibility:hidden}
+.intro-controls{position:absolute;right:18px;top:18px;z-index:10}
+.intro-skip{background:transparent;border:1px solid var(--line);color:var(--ink);padding:8px 10px;border-radius:6px;cursor:pointer;font:9px var(--mono)}
+
+@media(prefers-reduced-motion:reduce){
+  #intro-overlay{display:none}
+}
+

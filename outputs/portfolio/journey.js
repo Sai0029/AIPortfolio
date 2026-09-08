@@ -1,1 +1,44 @@
-(()=>{const route=document.querySelector('#route'),vehicle=document.querySelector('#route-vehicle'),progress=document.querySelector('#route-progress');if(!route||!vehicle)return;let current=0,target=0,raf=0;const points=[[0,155,-14],[23,56,16],[48,151,-12],[72,46,10],[100,112,-7]];function render(){current+=(target-current)*.085;const p=current*4,i=Math.min(3,Math.floor(p)),f=p-i,a=points[i],b=points[i+1];vehicle.style.setProperty('--route-p',a[0]+(b[0]-a[0])*f);vehicle.style.top=(a[1]+(b[1]-a[1])*f)+'px';vehicle.style.setProperty('--route-a',a[2]+(b[2]-a[2])*f);progress.textContent=Math.round(current*100).toString().padStart(2,'0')+'%';document.querySelectorAll('.checkpoint').forEach((c,x)=>c.classList.toggle('reached',current>=x/4));if(Math.abs(target-current)>.001)raf=requestAnimationFrame(render);else raf=0}function update(){const r=route.getBoundingClientRect(),span=innerHeight+r.height;target=Math.max(0,Math.min(1,(innerHeight-r.top)/span));if(!raf)raf=requestAnimationFrame(render)}addEventListener('scroll',update,{passive:true});addEventListener('resize',update);update()})();
+(()=>{
+	const route = document.querySelector('#route');
+	const vehicle = document.querySelector('#route-vehicle');
+	const pathEl = document.getElementById('route-path');
+	const progress = document.querySelector('#route-progress');
+	if(!route || !vehicle || !pathEl) return;
+
+	let current = 0, target = 0, raf = 0, total = pathEl.getTotalLength();
+
+	function render(){
+		total = pathEl.getTotalLength();
+		current += (target - current) * 0.085;
+		const len = total * current;
+		const pt = pathEl.getPointAtLength(len);
+
+		// viewBox is 1200x220 — map SVG coords to percentage positioning
+		const leftPct = (pt.x / 1200) * 100;
+		const topPct = (pt.y / 220) * 100;
+		vehicle.style.left = leftPct + '%';
+		vehicle.style.top = topPct + '%';
+
+		// compute heading by sampling a point slightly ahead
+		const ahead = pathEl.getPointAtLength(Math.min(total, len + Math.max(1, total * 0.002)));
+		const angle = Math.atan2(ahead.y - pt.y, ahead.x - pt.x) * 180 / Math.PI;
+		vehicle.style.setProperty('--route-a', angle.toFixed(2));
+
+		progress.textContent = Math.round(current * 100).toString().padStart(2,'0') + '%';
+
+		document.querySelectorAll('.checkpoint').forEach((c,x)=>c.classList.toggle('reached', current >= x/4));
+
+		if(Math.abs(target - current) > 0.0005) raf = requestAnimationFrame(render); else raf = 0;
+	}
+
+	function update(){
+		const r = route.getBoundingClientRect();
+		const span = innerHeight + r.height;
+		target = Math.max(0, Math.min(1, (innerHeight - r.top) / span));
+		if(!raf) raf = requestAnimationFrame(render);
+	}
+
+	addEventListener('scroll', update, {passive:true});
+	addEventListener('resize', update);
+	update();
+})();

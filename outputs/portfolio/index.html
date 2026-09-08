@@ -1,1 +1,1242 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Sai Krishna — Cloud, DevOps, Data, Fabric and AI Engineering"><title>Nagineni Sai Krishna | Cloud Engineering</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="enhancements.css"><link rel="stylesheet" href="journey.css"><link rel="stylesheet" href="hero-art.css"><link rel="stylesheet" href="polish.css"><link rel="stylesheet" href="cleanup.css"><link rel="stylesheet" href="theme-fix.css"></head><body><canvas id="stars" aria-hidden="true"></canvas><div class="noise"></div><header><a class="logo" href="#top"><span class="mark">NSK</span><span class="wordmark">NAGINENI<br><b>SAI KRISHNA</b></span></a><nav><a href="#universe">Universe</a><a href="#missions">Missions</a><a href="#learn">Learn</a><a href="#career">Journey</a></nav><div class="nav-actions"><button class="hud-button" data-command>⌘ Command</button><button class="theme" id="theme" aria-label="toggle theme">◐</button></div></header><main id="top"><section class="hero"><div class="hero-copy"><p class="eyebrow"><i></i> ENGINEERING COMMAND CENTER / 2026</p><h1>Systems that<br><em>move together.</em></h1><p>Cloud • DevOps • Data • Microsoft Fabric • AI Engineer</p><p class="hero-manifesto">Exploring. Building. Connecting.<br>Real-world engineering. Interactive knowledge.<br>Welcome to my universe.</p><div class="hero-stats"><span><b>04</b> DOMAINS</span><span><b>20+</b> TECHNOLOGIES</span><span><b>05</b> MISSIONS</span><span><b>∞</b> POSSIBILITIES</span></div><div class="actions"><a class="button" href="#universe">Enter the universe <b>↓</b></a><button class="quiet" data-command>Explore systems ↗</button></div></div><aside class="topology"><p>LIVE TOPOLOGY</p><b>● SYSTEMS ONLINE</b><span>AZURE <i>ONLINE</i></span><span>DEVOPS <i>ONLINE</i></span><span>DATA / FABRIC <i>ONLINE</i></span><span>AI <i>ONLINE</i></span></aside><div class="hud-level" id="level"></div><div class="galaxy-wrap"><div class="galaxy" id="galaxy"><div class="galaxy-grid"></div><div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div><div class="beam beam-a"></div><div class="beam beam-b"></div><div class="beam beam-c"></div><div class="packet p1"></div><div class="packet p2"></div><div class="packet p3"></div><div class="galaxy-hud hud-a">ORBITAL SYSTEM<br><b>4 ACTIVE DOMAINS</b></div><div class="galaxy-hud hud-b">LIVE TOPOLOGY<br><b>CONNECTED</b></div><button class="core node" data-domain="core"><strong>SAI<br>KRISHNA</strong><small>CLOUD · DEVOPS<br>DATA · AI</small></button><button class="node azure" data-domain="azure">☁<span>AZURE</span></button><button class="node devops" data-domain="devops">⚙<span>DEVOPS</span></button><button class="node data" data-domain="data">▦<span>DATA / FABRIC</span></button><button class="node ai" data-domain="ai">✦<span>AI</span></button></div><p class="galaxy-note">SELECT A SYSTEM</p></div><div class="scanline"><span>SCROLL TO EXPLORE</span><i></i><span>STATUS: ONLINE</span></div></section><section class="journey-route" id="route" aria-label="Engineering journey"><div class="route-head"><p class="eyebrow">ENGINEERING JOURNEY / LIVE PROGRESSION</p><p>DISCOVER <i>→</i> EXPLORE <i>→</i> BUILD <i>→</i> LEARN <i>→</i> GROW</p></div><div class="route-stage"><div class="route-track"><svg viewBox="0 0 1200 220" preserveAspectRatio="none" aria-hidden="true"><path id="route-path" d="M20,155 C180,200 220,35 410,105 S640,215 765,93 S970,31 1180,115"/></svg><div class="route-vehicle" id="route-vehicle"><span>◆</span><i></i></div><span class="checkpoint c1">01<br><b>DISCOVER</b></span><span class="checkpoint c2">02<br><b>EXPLORE</b></span><span class="checkpoint c3">03<br><b>BUILD</b></span><span class="checkpoint c4">04<br><b>LEARN</b></span><span class="checkpoint c5">05<br><b>GROW</b></span></div><div class="route-status"><span>ROUTE PROGRESS <b id="route-progress">00%</b></span><span>VEHICLE <b>ORBITAL RUNNER</b></span><span>NETWORK <b>CONNECTED</b></span></div></div></section><section id="universe" class="section universe"><div><p class="eyebrow">01 / ENGINEERING GALAXY</p><h2>Explore the<br><em>connected stack.</em></h2><p class="copy">Infrastructure, delivery, data and AI form one engineering system. Select a planet or use the command center.</p></div><div id="domain-view" class="terminal-panel"><div class="empty-state">⊹<p>Choose a system to enter its technical orbit.</p></div></div></section><section id="missions" class="missions section"><p class="eyebrow">02 / PROJECT UNIVERSE</p><div class="title-row"><h2>Engineering <em>missions.</em></h2><p class="copy">Reference architectures and interactive demonstrations. They illustrate engineering approaches—not unverified production claims.</p></div><div class="mission-grid" id="mission-grid"></div></section><section id="learn" class="learn section"><p class="eyebrow">03 / LEARNING GALAXY</p><div class="title-row"><h2>Learn by<br><em>seeing systems.</em></h2><p class="copy">Interactive engineering concepts with architecture, failure paths and interview-ready explanations.</p></div><div class="learn-layout"><div id="learn-nav" class="learn-nav"></div><div id="learn-view" class="terminal-panel"></div></div></section><section class="simulator section" id="simulator"><p class="eyebrow">04 / INCIDENT SIMULATOR</p><div class="sim-head"><h2>Diagnose the<br><em>signal.</em></h2><button id="reset-sim" class="hud-button">↻ Reset scenario</button></div><div id="incident" class="incident terminal-panel"></div></section><section class="interview section" id="interview"><p class="eyebrow">05 / INTERVIEW MODE</p><div class="title-row"><h2>Explain it with<br><em>clarity.</em></h2><button id="next-answer" class="hud-button">Next question →</button></div><div id="interview-view" class="interview-view terminal-panel"></div></section><section id="career" class="career section"><p class="eyebrow">06 / ENGINEERING JOURNEY</p><h2>From foundation<br>to <em>intelligence.</em></h2><div class="journey" id="journey"></div></section><section class="contact"><p class="eyebrow">07 / OPEN CHANNEL</p><h2>Bring the complex<br><em>problem.</em></h2><a href="mailto:hello@example.com" class="email">hello@example.com ↗</a><footer><a class="logo" href="#top"><span class="mark">NSK</span><span class="wordmark">NAGINENI<br><b>SAI KRISHNA</b></span></a><span>SAI KRISHNA / MICROSOFT CLOUD ENGINEERING</span><a href="https://github.com/Sai0029" target="_blank" rel="noreferrer">GitHub ↗</a></footer></section></main><div id="overlay" class="overlay" aria-hidden="true"></div><div id="panel" class="drawer" aria-live="polite"></div><div id="command" class="command"><div class="command-box"><div class="command-input"><span>⌕</span><input id="command-input" placeholder="Search the command center…" autofocus></div><div id="command-list"></div><p>ESC to close · ↑↓ to navigate · ENTER to open</p></div></div><script src="data.js"></script><script src="script.js"></script><script src="enhancements.js"></script><script src="journey.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Sai Krishna — Cloud, DevOps, Data, Fabric and AI Engineering">
+  <title>Nagineni Sai Krishna | Cloud Engineering</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="enhancements.css">
+  <link rel="stylesheet" href="journey.css">
+  <link rel="stylesheet" href="hero-art.css">
+  <link rel="stylesheet" href="polish.css">
+  <link rel="stylesheet" href="cleanup.css">
+  <link rel="stylesheet" href="theme-fix.css">
+  <style>
+    /* ═══════════════════════════════════════════════════════════════════════════════
+   MISSION CONTROL WORKSTATION STYLES
+   ═══════════════════════════════════════════════════════════════════════════════ */
+.mission-deck-terminal {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 1.75rem;
+  margin-top: 2.5rem;
+  align-items: stretch;
+}
+
+@media (max-width: 1024px) {
+  .mission-deck-terminal {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Left: Selector List */
+.mission-selector-pane {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.mission-nav-card {
+  background: rgba(3, 16, 26, 0.75);
+  border: 1px solid rgba(110, 234, 255, 0.14);
+  border-radius: 12px;
+  padding: 1.15rem 1.35rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.mission-nav-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #6eeaff;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.mission-nav-card:hover {
+  border-color: rgba(110, 234, 255, 0.45);
+  transform: translateX(4px);
+  background: rgba(5, 24, 38, 0.85);
+}
+
+.mission-nav-card.active {
+  border-color: #6eeaff;
+  background: rgba(8, 30, 48, 0.95);
+  box-shadow: 0 0 24px rgba(110, 234, 255, 0.2), inset 0 0 16px rgba(110, 234, 255, 0.06);
+}
+
+.mission-nav-card.active::before {
+  opacity: 1;
+}
+
+.nav-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.45rem;
+}
+
+.nav-card-id {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  color: #6eeaff;
+}
+
+.nav-card-status {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.68rem;
+  color: #65ffd0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-card-status i {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #65ffd0;
+  box-shadow: 0 0 8px #65ffd0;
+}
+
+.nav-card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 0.35rem 0;
+  letter-spacing: -0.01em;
+}
+
+.nav-card-stack {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  color: #94a3b8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Right: Mission Control Station */
+.mission-control-station {
+  background: rgba(2, 12, 22, 0.88);
+  border: 1px solid rgba(110, 234, 255, 0.22);
+  border-radius: 14px;
+  padding: 2rem;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.station-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.station-badge {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  color: #65ffd0;
+  background: rgba(101, 255, 208, 0.08);
+  border: 1px solid rgba(101, 255, 208, 0.25);
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.station-id {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: #6eeaff;
+}
+
+.station-title {
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: -0.02em;
+}
+
+.station-summary {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Interactive Event Tracer (Flow) */
+.station-block {
+  background: rgba(4, 18, 30, 0.65);
+  border: 1px solid rgba(110, 234, 255, 0.12);
+  border-radius: 10px;
+  padding: 1.25rem;
+}
+
+.block-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  color: #6eeaff;
+  margin-bottom: 1rem;
+}
+
+.block-label small {
+  color: #65ffd0;
+  opacity: 0.8;
+}
+
+.station-flow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.flow-hop-btn {
+  background: rgba(110, 234, 255, 0.06);
+  border: 1px solid rgba(110, 234, 255, 0.22);
+  color: #e2e8f0;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.82rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.flow-hop-btn:hover, .flow-hop-btn.active {
+  background: rgba(110, 234, 255, 0.25);
+  border-color: #6eeaff;
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(110, 234, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.flow-arrow {
+  color: #6eeaff;
+  opacity: 0.6;
+  font-size: 0.9rem;
+}
+
+.flow-inspection-box {
+  margin-top: 0.85rem;
+  padding: 0.75rem 1rem;
+  background: rgba(1, 8, 14, 0.8);
+  border-left: 2px solid #65ffd0;
+  font-size: 0.85rem;
+  color: #b8f6ff;
+  line-height: 1.45;
+}
+
+/* Strategy Grid */
+.station-grid-metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .station-grid-metrics {
+    grid-template-columns: 1fr;
+  }
+}
+
+.metric-card {
+  background: rgba(4, 18, 30, 0.65);
+  border: 1px solid rgba(110, 234, 255, 0.12);
+  border-radius: 10px;
+  padding: 1.15rem;
+}
+
+.metric-card-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  color: #6eeaff;
+  display: block;
+  margin-bottom: 0.45rem;
+}
+
+.metric-card p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+/* Terminal Replay Console */
+.station-terminal {
+  background: #01060c;
+  border: 1px solid rgba(110, 234, 255, 0.25);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.terminal-bar {
+  background: rgba(5, 20, 32, 0.95);
+  border-bottom: 1px solid rgba(110, 234, 255, 0.14);
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.terminal-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.terminal-dots i {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.terminal-dots i:nth-child(1) { background: #ff5f56; }
+.terminal-dots i:nth-child(2) { background: #ffbd2e; }
+.terminal-dots i:nth-child(3) { background: #27c93f; }
+
+.terminal-tabs {
+  display: flex;
+  gap: 6px;
+}
+
+.t-tab {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  padding: 3px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.t-tab.active, .t-tab:hover {
+  background: rgba(110, 234, 255, 0.12);
+  color: #6eeaff;
+}
+
+.terminal-status {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  color: #65ffd0;
+}
+
+.terminal-body {
+  margin: 0;
+  padding: 1.15rem;
+  color: #e2e8f0;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-all;
+  max-height: 180px;
+  overflow-y: auto;
+}
+    /* ═══════════════════════════════════════════════════════════════════════════
+       3D CHRONO-TIMELINE & 3D ISOMETRIC SKILL WALL STYLES
+       ═══════════════════════════════════════════════════════════════════════════ */
+    #experience {
+      position: relative;
+    }
+    .chrono-timeline {
+      position: relative;
+      max-width: 1200px;
+      margin: 3rem auto 0;
+      perspective: 1400px;
+    }
+    .chrono-line {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(180deg, #6eeaff 0%, #65ffd0 50%, rgba(110,234,255,0.1) 100%);
+      transform: translateX(-50%);
+      box-shadow: 0 0 15px rgba(110,234,255,0.6);
+    }
+    .chrono-nodes {
+      display: flex;
+      flex-direction: column;
+      gap: 3.5rem;
+      position: relative;
+      z-index: 2;
+    }
+    .chrono-item {
+      display: grid;
+      grid-template-columns: 1fr 60px 1fr;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    .chrono-dot {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #031018;
+      border: 2px solid #6eeaff;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 16px rgba(110,234,255,0.5);
+      cursor: pointer;
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+      z-index: 5;
+    }
+    .chrono-dot::after {
+      content: '';
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #65ffd0;
+      box-shadow: 0 0 10px #65ffd0;
+    }
+    .chrono-item:hover .chrono-dot {
+      transform: scale(1.3);
+      box-shadow: 0 0 28px #65ffd0;
+    }
+    .chrono-card-wrap {
+      perspective: 900px;
+    }
+    .chrono-card {
+      background: rgba(3,16,26,0.88);
+      border: 1px solid rgba(110,234,255,0.2);
+      border-radius: 14px;
+      padding: 1.6rem;
+      backdrop-filter: blur(14px);
+      box-shadow: 0 14px 32px rgba(0,0,0,0.65);
+      transform-style: preserve-3d;
+      transition: transform 0.35s cubic-bezier(0.16,1,0.3,1), border-color 0.35s ease, box-shadow 0.35s ease;
+      will-change: transform;
+    }
+    .chrono-item:hover .chrono-card {
+      border-color: #6eeaff;
+      box-shadow: 0 20px 48px rgba(0,0,0,0.85), 0 0 30px rgba(110,234,255,0.35);
+    }
+    .chrono-badge {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      color: #6eeaff;
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+      display: inline-block;
+    }
+    .chrono-card h3 {
+      font-size: 1.25rem;
+      margin: 0 0 0.25rem 0;
+      color: #fff;
+    }
+    .chrono-card h4 {
+      font-size: 0.92rem;
+      color: #65ffd0;
+      font-weight: 500;
+      margin: 0 0 0.9rem 0;
+    }
+    .chrono-card ul {
+      margin: 0;
+      padding-left: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      color: #94a3b8;
+      font-size: 0.86rem;
+      line-height: 1.5;
+    }
+    .chrono-card ul li strong {
+      color: #f1f5f9;
+    }
+    .chrono-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 1rem;
+    }
+    .chrono-chips span {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      background: rgba(110,234,255,0.06);
+      border: 1px solid rgba(110,234,255,0.18);
+      color: #b8f6ff;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════════════════
+       3D WALL OF SKILLS (CARDS ON WALL EFFECT)
+       ═══════════════════════════════════════════════════════════════════════════ */
+    .chrono-wall-wrap {
+      perspective: 1000px;
+      transform-style: preserve-3d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .chrono-skill-wall {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+      padding: 1.2rem;
+      border-radius: 16px;
+      background: rgba(2, 10, 18, 0.65);
+      border: 1px solid rgba(110, 234, 255, 0.15);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.7), inset 0 0 20px rgba(110, 234, 255, 0.05);
+      transform-style: preserve-3d;
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+    }
+
+    /* Isometric Angled Wall Pitch */
+    .chrono-item.left .chrono-skill-wall {
+      transform: rotateY(-14deg) rotateX(6deg);
+    }
+    .chrono-item.right .chrono-skill-wall {
+      transform: rotateY(14deg) rotateX(6deg);
+    }
+
+    .chrono-item:hover .chrono-skill-wall {
+      transform: rotateY(0deg) rotateX(0deg) translateZ(15px);
+      border-color: rgba(110, 234, 255, 0.4);
+      box-shadow: 0 22px 48px rgba(0, 0, 0, 0.85), 0 0 35px rgba(110, 234, 255, 0.2);
+    }
+
+    /* Small Individual Skill Card Mounted on Wall */
+    .mini-skill-card {
+      position: relative;
+      background: rgba(3, 18, 30, 0.88);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 0.85rem 0.65rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 0.4rem;
+      cursor: pointer;
+      user-select: none;
+      transform-style: preserve-3d;
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.12);
+    }
+
+    /* Hanging Card Depth Shadow */
+    .mini-skill-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 10px;
+      background: radial-gradient(circle at 50% 0%, var(--skill-glow, #6eeaff), transparent 70%);
+      opacity: 0;
+      transition: opacity 0.25s ease;
+      pointer-events: none;
+    }
+
+    /* 3D Wall Pop-out on Hover */
+    .mini-skill-card:hover {
+      transform: translateZ(28px) scale(1.12);
+      border-color: #ffffff;
+      background: rgba(6, 28, 48, 0.95);
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.85), 0 0 25px var(--skill-glow, #6eeaff), inset 0 0 12px var(--skill-glow, #6eeaff);
+      z-index: 20;
+    }
+    .mini-skill-card:hover::after {
+      opacity: 0.28;
+    }
+
+    .mini-skill-card .skill-icon {
+      font-size: 1.35rem;
+      line-height: 1;
+      filter: drop-shadow(0 2px 5px rgba(0,0,0,0.8));
+    }
+    .mini-skill-card .skill-name {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: #e2e8f0;
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+    }
+    .mini-skill-card .skill-cat {
+      font-size: 0.58rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--skill-glow, #6eeaff);
+      opacity: 0.85;
+    }
+
+    /* Alternating Grid Orientations */
+    .chrono-item.left .chrono-card-wrap { grid-column: 1; }
+    .chrono-item.left .chrono-dot { grid-column: 2; }
+    .chrono-item.left .chrono-wall-wrap { grid-column: 3; }
+
+    .chrono-item.right .chrono-wall-wrap { grid-column: 1; }
+    .chrono-item.right .chrono-dot { grid-column: 2; }
+    .chrono-item.right .chrono-card-wrap { grid-column: 3; }
+
+    @media (max-width: 900px) {
+      .chrono-line { left: 24px; }
+      .chrono-item { display: flex; flex-direction: column; padding-left: 54px; position: relative; gap: 1.5rem; }
+      .chrono-dot { position: absolute; left: 6px; top: 0; margin: 0; }
+      .chrono-card-wrap { width: 100%; }
+      .chrono-wall-wrap { width: 100%; }
+      .chrono-skill-wall { transform: none !important; width: 100%; box-sizing: border-box; }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="noise"></div>
+  <header>
+    <a class="logo" href="#top">
+      <span class="mark">NSK</span>
+      <span class="wordmark">NAGINENI<br><b>SAI KRISHNA</b></span>
+    </a>
+    <nav>
+      <a href="#universe">Universe</a>
+      <a href="#experience">Experience</a>
+      <a href="#missions">Missions</a>
+      <a href="#learn">Learn</a>
+      <a href="#career">Journey</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="hud-button" data-command>⌘ Command</button>
+      <button class="theme" id="theme" aria-label="toggle theme">◐</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><i></i> ENGINEERING COMMAND CENTER / 2026</p>
+        <h1>Systems that<br><em>move together.</em></h1>
+        <p>Cloud • DevOps • Data • Microsoft Fabric • AI Engineer</p>
+        <p class="hero-manifesto">Exploring. Building. Connecting.<br>Real-world engineering. Interactive knowledge.<br>Welcome to my universe.</p>
+        <div class="hero-stats">
+          <span><b>05</b> DOMAINS</span>
+          <span><b>20+</b> TECHNOLOGIES</span>
+          <span><b>05</b> MISSIONS</span>
+          <span><b>∞</b> POSSIBILITIES</span>
+        </div>
+        <div class="actions">
+          <a class="button" href="#universe">Enter the universe <b>↓</b></a>
+          <button class="quiet" data-command>Explore systems ↗</button>
+        </div>
+      </div>
+      <aside class="topology">
+        <p>LIVE TOPOLOGY</p>
+        <b>● SYSTEMS ONLINE</b>
+        <span>AZURE <i>ONLINE</i></span>
+        <span>DEVOPS <i>ONLINE</i></span>
+        <span>DATA / FABRIC <i>ONLINE</i></span>
+        <span>AI <i>ONLINE</i></span>
+      </aside>
+      <div class="hud-level" id="level"></div>
+      <div class="galaxy-wrap">
+        <div class="galaxy" id="galaxy">
+          <div class="galaxy-grid"></div>
+          <div class="orbit o1"></div>
+          <div class="orbit o2"></div>
+          <div class="orbit o3"></div>
+          <div class="beam beam-a"></div>
+          <div class="beam beam-b"></div>
+          <div class="beam beam-c"></div>
+          <div class="packet p1"></div>
+          <div class="packet p2"></div>
+          <div class="packet p3"></div>
+          <div class="galaxy-hud hud-a">ORBITAL SYSTEM<br><b>5 ACTIVE DOMAINS</b></div>
+          <div class="galaxy-hud hud-b">LIVE TOPOLOGY<br><b>CONNECTED</b></div>
+          <button class="core node" data-domain="core"><strong>SAI<br>KRISHNA</strong><small>CLOUD · DEVOPS<br>DATA · AI</small></button>
+          <button class="node azure" data-domain="azure">☁<span>AZURE</span></button>
+          <button class="node devops" data-domain="devops">⚙<span>DEVOPS</span></button>
+          <button class="node data" data-domain="data">▦<span>DATA / FABRIC</span></button>
+          <button class="node ai" data-domain="ai">✦<span>AI</span></button>
+        </div>
+        <p class="galaxy-note">SELECT A SYSTEM</p>
+      </div>
+      <div class="scanline">
+        <span>SCROLL TO EXPLORE</span>
+        <i></i>
+        <span>STATUS: ONLINE</span>
+      </div>
+    </section>
+
+    <!-- Progression Route -->
+    <section class="journey-route" id="route" aria-label="Engineering journey">
+      <div class="route-head">
+        <p class="eyebrow">ENGINEERING JOURNEY / LIVE PROGRESSION</p>
+        <p>DISCOVER <i>→</i> EXPLORE <i>→</i> BUILD <i>→</i> LEARN <i>→</i> GROW</p>
+      </div>
+      <div class="route-stage">
+        <div class="route-track">
+          <svg viewBox="0 0 1200 220" preserveAspectRatio="none" aria-hidden="true">
+            <path id="route-path" d="M20,155 C180,200 220,35 410,105 S640,215 765,93 S970,31 1180,115"/>
+          </svg>
+          <div class="route-vehicle" id="route-vehicle"><span>◆</span><i></i></div>
+          <span class="checkpoint c1">01<br><b>DISCOVER</b></span>
+          <span class="checkpoint c2">02<br><b>EXPLORE</b></span>
+          <span class="checkpoint c3">03<br><b>BUILD</b></span>
+          <span class="checkpoint c4">04<br><b>LEARN</b></span>
+          <span class="checkpoint c5">05<br><b>GROW</b></span>
+        </div>
+        <div class="route-status">
+          <span>ROUTE PROGRESS <b id="route-progress">00%</b></span>
+          <span>VEHICLE <b>ORBITAL RUNNER</b></span>
+          <span>NETWORK <b>CONNECTED</b></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Universe Section -->
+    <section id="universe" class="section universe">
+      <div>
+        <p class="eyebrow">01 / ENGINEERING GALAXY</p>
+        <h2>Explore the<br><em>connected stack.</em></h2>
+        <p class="copy">Infrastructure, delivery, data and AI form one engineering system. Select a planet or use the command center.</p>
+      </div>
+      <div id="domain-view" class="terminal-panel">
+        <div class="empty-state">
+          ⊹
+          <p>Choose a system to enter its technical orbit.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════════
+         EXPERIENCE TIMELINE WITH 3D ISOMETRIC SKILL WALL CARDS
+         ═══════════════════════════════════════════════════════════════════════════ -->
+    <section id="experience" class="section experience">
+      <p class="eyebrow">EXPERIENCE / CHRONOLOGY</p>
+      <div class="title-row">
+        <h2>Production <em>trajectory.</em></h2>
+        <p class="copy">Operational milestones, production engineering, and platform automation history.</p>
+      </div>
+      
+      <div class="chrono-timeline">
+        <div class="chrono-line"></div>
+        <div class="chrono-nodes">
+          
+          <!-- Node 1: Deloitte USI (Left Card + Right 3D Wall of Cloud/K8s/DB Skills) -->
+          <div class="chrono-item left">
+            <div class="chrono-card-wrap">
+              <div class="chrono-card">
+                <span class="chrono-badge">JUN 2025 — PRESENT • HYDERABAD, INDIA</span>
+                <h3>DevOps Engineer 1</h3>
+                <h4>Deloitte USI</h4>
+                <ul>
+                  <li><strong>Production Operations:</strong> Support enterprise production workloads across Azure, AKS, Kubernetes, and monitoring services.</li>
+                  <li><strong>Troubleshooting:</strong> Perform end-to-end root-cause analysis across pods, ingress, networking, identity, and dependencies.</li>
+                  <li><strong>Delivery &amp; GitOps:</strong> Deploy containerized apps using Docker, ACR, Helm, ArgoCD, and Azure DevOps pipelines.</li>
+                  <li><strong>Infrastructure as Code:</strong> Provision and manage cloud resources declaratively using Terraform and Azure Bicep.</li>
+                  <li><strong>Observability &amp; DBA:</strong> Monitor cluster health using Log Analytics, KQL, and Grafana while handling SQL Server DBA operations.</li>
+                </ul>
+                <div class="chrono-chips">
+                  <span>Azure</span><span>AKS</span><span>Terraform</span><span>ArgoCD</span><span>Helm</span><span>Istio</span><span>SQL Server</span><span>KQL</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="chrono-dot"></div>
+            
+            <!-- 3D Wall of Skills for Deloitte USI -->
+            <div class="chrono-wall-wrap">
+              <div class="chrono-skill-wall">
+                <div class="mini-skill-card" style="--skill-glow:#0089d6;">
+                  <span class="skill-icon">☁</span>
+                  <span class="skill-name">Azure</span>
+                  <span class="skill-cat">Cloud</span>
+                </div>
+                <div class="mini-skill-card" style="--skill-glow:#326ce5;">
+                  <span class="skill-icon">☸</span>
+                  <span class="skill-name">AKS</span>
+                  <span class="skill-cat">Orchestration</span>
+                </div>
+                <div class="mini-skill-card" style="--skill-glow:#844fba;">
+                  <span class="skill-icon">⚡</span>
+                  <span class="skill-name">Terraform</span>
+                  <span class="skill-cat">IaC</span>
+                </div>
+                <div class="mini-skill-card" style="--skill-glow:#ef6c00;">
+                  <span class="skill-icon">🐙</span>
+                  <span class="skill-name">ArgoCD</span>
+                  <span class="skill-cat">GitOps</span>
+                </div>
+                <div class="mini-skill-card" style="--skill-glow:#0078d4;">
+                  <span class="skill-icon">⎈</span>
+                  <span class="skill-name">Helm</span>
+                  <span class="skill-cat">Packages</span>
+                </div>
+                <div class="mini-skill-card" style="--skill-glow:#466bb0;">
+                  <span class="skill-icon">⛵</span>
+                  <span class="skill-name">Istio</span>
+                  <span class="skill-cat">Service Mesh</span>
+                </div>
+                <div class="mini-skill-card" style="--skill-glow:#cc292b;">
+                  <span class="skill-icon">🗄</span>
+                  <span class="skill-name">SQL Server</span>
+                  <span class="skill-cat">DBA / IaaS</span>
+                </div>
+                <div class="mini-skill-card" style="--skill-glow:#f46800;">
+                  <span class="skill-icon">📊</span>
+                  <span class="skill-name">Grafana</span>
+                  <span class="skill-cat">Metrics</span>
+                </div>
+                <div class="mini-skill-card" style="--skill-glow:#00bcf2;">
+                  <span class="skill-icon">🔎</span>
+                  <span class="skill-name">KQL</span>
+                  <span class="skill-cat">Log Analytics</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Node 2: Freelance DevOps (Left 3D Wall of CI/CD/Python Skills + Right Card) -->
+          <div class="chrono-item right">
+            <!-- 3D Wall of Skills for Freelance -->
+            <div class="chrono-wall-wrap">
+              <div class="chrono-skill-wall">
+                <div class="mini-skill-card" style="--skill-glow:#ffd43b;">
+                  <span class="skill-icon">🐍</span>
+                  <span class="skill-name">Python</span>
+                  <span class="skill-cat">Automation</span>
+                </div>
+                <div class="mini-skill-card" style="--skill-glow:#2496ed;">
+                  <span class="skill-icon">🐳</span>
+                  <span class="skill-name">Docker</span>
+                  <span class="skill-cat">Containers</span>
+                </div>
+                <div class="mini-skill-card" style="--skill-glow:#326ce5;">
+                  <span class="skill-icon">☸</span>
+                  <span class="skill-name">Kubernetes</span>
+                  <span class="skill-cat">Clusters</span>
+                </div>
+                <div class="mini-skill-card" style="--skill-glow:#f05032;">
+                  <span class="skill-icon">🔀</span>
+                  <span class="skill-name">Git</span>
+                  <span class="skill-cat">Version Control</span>
+                </div>
+                <div class="mini-skill-card" style="--skill-glow:#d33833;">
+                  <span class="skill-icon">⚙</span>
+                  <span class="skill-name">Jenkins</span>
+                  <span class="skill-cat">CI/CD Engine</span>
+                </div>
+                <div class="mini-skill-card" style="--skill-glow:#65ffd0;">
+                  <span class="skill-icon">🔗</span>
+                  <span class="skill-name">REST APIs</span>
+                  <span class="skill-cat">Integration</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="chrono-dot"></div>
+
+            <div class="chrono-card-wrap">
+              <div class="chrono-card">
+                <span class="chrono-badge">AUG 2024 — APR 2025 • REMOTE</span>
+                <h3>Freelance DevOps &amp; Automation Engineer</h3>
+                <h4>Cloud Automation &amp; Platform Systems</h4>
+                <ul>
+                  <li><strong>CI/CD Pipelines:</strong> Engineered end-to-end automation pipelines reducing manual operational overhead.</li>
+                  <li><strong>Microservices:</strong> Developed Python-based services for API orchestration, error handling, and configuration management.</li>
+                  <li><strong>Event-Driven Flows:</strong> Architected webhook-triggered operational workflows integrated with deployment gates.</li>
+                  <li><strong>Container Management:</strong> Containerized workloads with Docker and orchestrated deployments on Kubernetes clusters.</li>
+                </ul>
+                <div class="chrono-chips">
+                  <span>Python</span><span>Kubernetes</span><span>Docker</span><span>CI/CD</span><span>Grafana</span><span>Webhooks</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     02 / PROJECT UNIVERSE — MISSION CONTROL WORKSTATION
+     ═══════════════════════════════════════════════════════════════════════════ -->
+<section id="missions" class="missions section" aria-label="Engineering Missions">
+  <p class="eyebrow">02 / PROJECT UNIVERSE</p>
+  <div class="title-row">
+    <h2>Engineering <em>missions.</em></h2>
+    <p class="copy">
+      Reference architectures, failure recovery paths, and interactive operational directives.
+      They illustrate production engineering approaches—not unverified claims.
+    </p>
+  </div>
+
+  <!-- Mission Workstation Terminal Split-Pane -->
+  <div class="mission-deck-terminal">
+    <!-- Left: Mission Selector Navigation -->
+    <div class="mission-selector-pane" id="mission-selector-list" role="tablist">
+      <!-- Populated dynamically via JS -->
+    </div>
+
+    <!-- Right: Mission Control Workstation -->
+    <div class="mission-control-station" id="mission-active-stage">
+      <!-- Live Stage Header -->
+      <div class="station-header">
+        <div class="station-meta">
+          <span class="station-badge" id="station-badge">DIRECTIVE ACTIVE</span>
+          <span class="station-id" id="station-id">MISSION 01</span>
+        </div>
+        <h3 class="station-title" id="station-title">Loading Mission…</h3>
+        <p class="station-summary" id="station-summary"></p>
+      </div>
+
+      <!-- Interactive Architectural Event Tracer -->
+      <div class="station-block">
+        <div class="block-label">
+          <span>INTERACTIVE TOPOLOGY TRACER</span>
+          <small>CLICK NODES TO INSPECT SYSTEM BOUNDARY</small>
+        </div>
+        <div class="station-flow" id="station-flow"></div>
+        <div class="flow-inspection-box" id="flow-inspection-box">
+          Select an architectural hop above to verify security and networking controls.
+        </div>
+      </div>
+
+      <!-- Architectural Strategy & Trade-Offs -->
+      <div class="station-grid-metrics">
+        <div class="metric-card">
+          <span class="metric-card-label">OPERATIONAL CHALLENGE</span>
+          <p id="station-challenge">Analyzing system constraints…</p>
+        </div>
+        <div class="metric-card">
+          <span class="metric-card-label">PRODUCTION TRADE-OFF & STRATEGY</span>
+          <p id="station-tradeoff">Evaluating architecture tradeoffs…</p>
+        </div>
+      </div>
+
+      <!-- Live Terminal Console Trace -->
+      <div class="station-terminal">
+        <div class="terminal-bar">
+          <div class="terminal-dots">
+            <i></i><i></i><i></i>
+          </div>
+          <div class="terminal-tabs" id="terminal-tabs">
+            <button class="t-tab active" data-view="cmd1" id="tab-btn-1">kubectl</button>
+            <button class="t-tab" data-view="cmd2" id="tab-btn-2">terraform</button>
+            <button class="t-tab" data-view="cmd3" id="tab-btn-3">telemetry</button>
+          </div>
+          <span class="terminal-status">LIVE REPLAY</span>
+        </div>
+        <pre class="terminal-body"><code id="station-console-output">Streaming telemetry output...</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Learning Section -->
+    <section id="learn" class="learn section">
+      <p class="eyebrow">03 / LEARNING GALAXY</p>
+      <div class="title-row">
+        <h2>Learn by<br><em>seeing systems.</em></h2>
+        <p class="copy">Interactive engineering concepts with architecture, failure paths and interview-ready explanations.</p>
+      </div>
+      <div class="learn-layout">
+        <div id="learn-nav" class="learn-nav"></div>
+        <div id="learn-view" class="terminal-panel"></div>
+      </div>
+    </section>
+
+    <!-- Incident Simulator -->
+    <section class="simulator section" id="simulator">
+      <p class="eyebrow">04 / INCIDENT SIMULATOR</p>
+      <div class="sim-head">
+        <h2>Diagnose the<br><em>signal.</em></h2>
+        <button id="reset-sim" class="hud-button">↻ Reset scenario</button>
+      </div>
+      <div id="incident" class="incident terminal-panel"></div>
+    </section>
+
+    <!-- Interview Section -->
+    <section class="interview section" id="interview">
+      <p class="eyebrow">05 / INTERVIEW MODE</p>
+      <div class="title-row">
+        <h2>Explain it with<br><em>clarity.</em></h2>
+        <button id="next-answer" class="hud-button">Next question →</button>
+      </div>
+      <div id="interview-view" class="interview-view terminal-panel"></div>
+    </section>
+
+    <!-- Journey Section -->
+    <section id="career" class="career section">
+      <p class="eyebrow">06 / ENGINEERING JOURNEY</p>
+      <h2>From foundation<br>to <em>intelligence.</em></h2>
+      <div class="journey" id="journey"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+      <p class="eyebrow">07 / OPEN CHANNEL</p>
+      <h2>Bring the complex<br><em>problem.</em></h2>
+      <a href="mailto:nsai0029@gmail.com" class="email">nsai0029@gmail.com ↗[cite: 1]</a>
+      <footer>
+        <a class="logo" href="#top">
+          <span class="mark">NSK</span>
+          <span class="wordmark">NAGINENI<br><b>SAI KRISHNA</b></span>
+        </a>
+        <span>SAI KRISHNA / MICROSOFT CLOUD ENGINEERING</span>
+        <a href="https://github.com/Sai0029" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </footer>
+    </section>
+  </main>
+
+  <div id="overlay" class="overlay" aria-hidden="true"></div>
+  <div id="panel" class="drawer" aria-live="polite"></div>
+
+  <!-- Command Palette Modal -->
+  <div id="command" class="command">
+    <div class="command-box">
+      <div class="command-input">
+        <span>⌕</span>
+        <input id="command-input" placeholder="Search the command center…" autofocus>
+      </div>
+      <div id="command-list"></div>
+      <p>ESC to close · ↑↓ to navigate · ENTER to open</p>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+  <script src="enhancements.js"></script>
+  <script src="journey.js"></script>
+
+  <!-- 3D Gyroscopic Card & Skill Wall Tilt Script -->
+  <script>
+    document.querySelectorAll('.chrono-card-wrap').forEach(w => {
+      const c = w.querySelector('.chrono-card');
+      w.addEventListener('mousemove', e => {
+        const r = w.getBoundingClientRect();
+        const x = (e.clientX - r.left - r.width / 2) / (r.width / 2);
+        const y = (e.clientY - r.top - r.height / 2) / (r.height / 2);
+        c.style.transform = `rotateX(${-y * 10}deg) rotateY(${x * 10}deg) translateZ(16px)`;
+      });
+      w.addEventListener('mouseleave', () => {
+        c.style.transform = 'rotateX(0deg) rotateY(0deg) translateZ(0px)';
+      });
+    });
+
+    // 3D Wall Interactive Mouse Tilt
+    document.querySelectorAll('.chrono-wall-wrap').forEach(w => {
+      const wall = w.querySelector('.chrono-skill-wall');
+      const isLeft = w.closest('.chrono-item').classList.contains('right'); // reversed column
+      const baseRotY = isLeft ? 14 : -14;
+
+      w.addEventListener('mousemove', e => {
+        const r = w.getBoundingClientRect();
+        const x = (e.clientX - r.left - r.width / 2) / (r.width / 2);
+        const y = (e.clientY - r.top - r.height / 2) / (r.height / 2);
+        wall.style.transform = `rotateX(${-y * 12 + 6}deg) rotateY(${x * 12 + baseRotY}deg) translateZ(20px)`;
+      });
+      w.addEventListener('mouseleave', () => {
+        wall.style.transform = `rotateY(${baseRotY}deg) rotateX(6deg) translateZ(0px)`;
+      });
+    });
+
+    /* ═══════════════════════════════════════════════════════════════════════════════
+   MISSION CONTROL WORKSTATION CONTROLLER & TELEMETRY ENGINE
+   ═══════════════════════════════════════════════════════════════════════════════ */
+document.addEventListener("DOMContentLoaded", () => {
+  const selectorList = document.getElementById("mission-selector-list");
+  if (!selectorList) return;
+
+  // Real Enterprise Missions from Your Experience & Reference Stacks
+  const MISSIONS = [
+    {
+      id: "MISSION 01",
+      code: "AEGIS-AKS",
+      status: "OPERATIONAL",
+      title: "Enterprise AKS & GitOps Service Mesh Delivery",
+      summary: "Zero-downtime microservices delivery engine across Azure Kubernetes Service (AKS), configured with Istio mTLS and declarative ArgoCD synchronization.",
+      stack: "AKS · Istio · Helm · ArgoCD · Azure DevOps · App Gateway",
+      flow: [
+        { label: "App Gateway", detail: "Layer 7 WAF, SSL termination, and private AKS backend pool health probing." },
+        { label: "Istio Ingress", detail: "Mutual TLS (mTLS) enforcement, virtual service canary weight shifting (90/10)." },
+        { label: "AKS Workloads", detail: "Horizontal Pod Autoscaler (HPA) coupled with Pod Disruption Budgets (PDB) & Managed Identities." },
+        { label: "ArgoCD GitOps", detail: "Automated pull controller enforcing declarative Git states with drift auto-reconciliation." }
+      ],
+      challenge: "High burst-traffic spikes causing 502 gateway timeouts and configuration drift during multi-developer deployments.",
+      tradeoff: "Adopted pull-based GitOps with ArgoCD rather than pipeline-push models to prevent cluster drift and guarantee atomic rollback states within 12 seconds.",
+      consoles: {
+        cmd1: `kubectl get pods -n ingress-mesh -l app=istio-ingress\nNAME                                    READY   STATUS    RESTARTS   AGE\nistio-ingressgateway-7c48f8864b-2df8    1/1     Running   0          42d\nistio-ingressgateway-7c48f8864b-84g1    1/1     Running   0          42d\n\nkubectl get hpa -n production\nNAME              REFERENCE          TARGETS   MINPODS   MAXPODS   REPLICAS\napi-service-hpa   Deployment/api-srv 42%/70%   3         18        4`,
+        cmd2: `module "aks_cluster" {\n  source              = "./modules/aks"\n  cluster_name        = "aks-prod-centralus-01"\n  kubernetes_version  = "1.30.2"\n  enable_auto_scaling = true\n  min_count           = 3\n  max_count           = 15\n  oidc_issuer_enabled = true # Microsoft Entra ID Workload Identity\n}`,
+        cmd3: `KubePodInventory\n| where TimeGenerated > ago(1h)\n| where ClusterName == "aks-prod-centralus-01"\n| summarize PodCount = count() by PodStatus, bin(TimeGenerated, 5m)\n| render timechart`
+      }
+    },
+    {
+      id: "MISSION 02",
+      code: "TERRA-SYNC",
+      status: "SYNCED",
+      title: "Multi-Environment IaC & Secret Orchestration",
+      summary: "Automated provisioning of enterprise Azure landing zones using modular Terraform, Azure Bicep, and Key Vault integration with zero stored credentials.",
+      stack: "Terraform · Bicep · Azure DevOps · Key Vault · Managed Identities",
+      flow: [
+        { label: "Azure DevOps", detail: "CI/CD pipeline with approval gates, static security scans (Trivy), and dry-run execution." },
+        { label: "Terraform Engine", detail: "Remote state locking backed by blob storage with CMK encryption." },
+        { label: "Azure Key Vault", detail: "Dynamic secret retrieval via Microsoft Entra Workload Identities; zero keys stored in code." },
+        { label: "Target Landing Zone", detail: "Virtual Hub, VNet peerings, NSGs, route tables, and subnet isolation." }
+      ],
+      challenge: "Manual provisioning discrepancies between dev, stage, and production environments, along with secret sprawl in deployment scripts.",
+      tradeoff: "Mandated reusable, immutable Terraform modules paired with Azure Bicep fallback for platform features, eliminating environmental drift across 3 regional targets.",
+      consoles: {
+        cmd1: `az keyvault secret show --name "DatabaseConnectionString" --vault-name "kv-prod-eastus-01" --query "id" -o tsv\nhttps://kv-prod-eastus-01.vault.azure.net/secrets/DatabaseConnectionString/71239bf09`,
+        cmd2: `terraform plan -out=tfplan.binary\nPlan: 14 to add, 0 to change, 0 to destroy.\nChanges to Outputs:\n  + aks_ingress_fqdn = "ingress.platform.deloitte.internal"\n  + virtual_network_id = "/subscriptions/.../vnet-spoke-01"`,
+        cmd3: `AzureActivity\n| where TimeGenerated > ago(24h)\n| where Caller == "sp-terraform-pipeline"\n| where ActivityStatusValue == "Success"\n| project TimeGenerated, OperationNameValue, ResourceGroup`
+      }
+    },
+    {
+      id: "MISSION 03",
+      code: "SQL-SENTRY",
+      status: "OPTIMIZED",
+      title: "SQL Server DBA Operations & Performance Tuning",
+      summary: "End-to-end database reliability operations across SQL Server IaaS, Azure SQL PaaS, and on-premises instances with automated maintenance workflows.",
+      stack: "SQL Server · Azure SQL · PowerShell · KQL · Performance Tuning",
+      flow: [
+        { label: "App Data Tier", detail: "Connection pooling, retry logic, and connection timeout management." },
+        { label: "Azure SQL PaaS", detail: "vCore scaling, read-scaleout configuration, and Geo-Replication failover validation." },
+        { label: "PowerShell Engine", detail: "Automated index reorganization, integrity checks, and backup retention validation." },
+        { label: "Log Analytics", detail: "Execution plan capture, expensive query telemetry, and deadlock alerting." }
+      ],
+      challenge: "High index fragmentation and blocking queries on high-throughput workloads degrading API performance during end-of-month financial runs.",
+      tradeoff: "Engineered automated PowerShell and SQL maintenance scripts that run off-peak based on fragmentation thresholds (>30% rebuild, >10% reorganize) while keeping business databases online.",
+      consoles: {
+        cmd1: `Get-SqlDatabase -ServerInstance "sql-prod-01" | ForEach-Object {\n    Invoke-Sqlcmd -Query "ALTER INDEX ALL ON [$($_.Name)] REORGANIZE;"\n}\nWrite-Host "Maintenance completed successfully on $(Get-Date)" -ForegroundColor Green`,
+        cmd2: `SELECT TOP 5 total_worker_time/execution_count AS Avg_CPU_Time,\n    Plan_handle, query_text = SUBSTRING(st.text, (qs.statement_start_offset/2)+1, 100)\nFROM sys.dm_exec_query_stats qs\nCROSS APPLY sys.dm_exec_sql_text(qs.sql_handle) st\nORDER BY Avg_CPU_Time DESC;`,
+        cmd3: `AzureMetrics\n| where MetricName in ("cpu_percent", "dtu_consumption_percent")\n| summarize AvgUsage = avg(Average), MaxUsage = max(Maximum) by bin(TimeGenerated, 15m)\n| render timechart`
+      }
+    },
+    {
+      id: "MISSION 04",
+      code: "SYNAPSE-AI",
+      status: "READY",
+      title: "Private Ingress for Enterprise RAG & Fabric",
+      summary: "Secure network integration connecting Azure OpenAI model endpoints, vector retrieval indexers, and Microsoft Fabric lakehouses via private endpoints.",
+      stack: "Azure OpenAI · Microsoft Fabric · Private Endpoints · Python · Delta Lake",
+      flow: [
+        { label: "User Gateway", detail: "Encrypted HTTPS client requests authenticated through Microsoft Entra ID." },
+        { label: "Private Endpoint", detail: "Disables public IP access, routing traffic exclusively through internal virtual subnets." },
+        { label: "Azure OpenAI", detail: "Enterprise LLM inference, embedding extraction, and semantic search integration." },
+        { label: "Microsoft Fabric", detail: "OneLake delta table storage, real-time ingestion, and analytical pipelines." }
+      ],
+      challenge: "Strict enterprise data boundary policies preventing any cognitive API traffic or sensitive data lake ingestion over public endpoints.",
+      tradeoff: "Designed a private DNS-zone architecture combined with Application Gateway path-based routing to keep LLM telemetry and analytics completely air-gapped from the public internet.",
+      consoles: {
+        cmd1: `az network private-endpoint show -g rg-ai-prod -n pe-openai-prod --query "customDnsConfigs"\n[\n  {\n    "fqdn": "privatelink.openai.azure.com",\n    "ipAddresses": ["10.240.4.15"]\n  }\n]`,
+        cmd2: `resource "azurerm_private_endpoint" "fabric_ai_pe" {\n  name                = "pe-fabric-prod"\n  location            = "centralus"\n  resource_group_name = "rg-fabric-prod"\n  subnet_id           = azurerm_subnet.data_tier.id\n}`,
+        cmd3: `AppServiceHTTPLogs\n| where ScStatus == 200\n| where CsUriStem contains "openai/deployments"\n| summarize RequestCount = count() by bin(TimeGenerated, 5m)`
+      }
+    }
+  ];
+
+  let currentMission = MISSIONS[0];
+  let currentConsoleView = "cmd1";
+
+  // Render Left Navigation
+  function renderSelector() {
+    selectorList.innerHTML = MISSIONS.map((m, idx) => `
+      <div class="mission-nav-card ${idx === 0 ? "active" : ""}" data-idx="${idx}">
+        <div class="nav-card-head">
+          <span class="nav-card-id">${m.id} // ${m.code}</span>
+          <span class="nav-card-status"><i></i>${m.status}</span>
+        </div>
+        <div class="nav-card-title">${m.title}</div>
+        <div class="nav-card-stack">${m.stack}</div>
+      </div>
+    `).join("");
+
+    selectorList.querySelectorAll(".mission-nav-card").forEach((card) => {
+      card.addEventListener("click", () => {
+        const idx = +card.dataset.idx;
+        selectorList.querySelectorAll(".mission-nav-card").forEach(c => c.classList.remove("active"));
+        card.classList.add("active");
+        currentMission = MISSIONS[idx];
+        renderStage();
+      });
+    });
+  }
+
+  // Render Right Stage
+  function renderStage() {
+    document.getElementById("station-id").textContent = `${currentMission.id} // ${currentMission.code}`;
+    document.getElementById("station-badge").textContent = currentMission.status;
+    document.getElementById("station-title").textContent = currentMission.title;
+    document.getElementById("station-summary").textContent = currentMission.summary;
+    document.getElementById("station-challenge").textContent = currentMission.challenge;
+    document.getElementById("station-tradeoff").textContent = currentMission.tradeoff;
+
+    // Render Flow Diagram
+    const flowContainer = document.getElementById("station-flow");
+    const inspectBox = document.getElementById("flow-inspection-box");
+    
+    flowContainer.innerHTML = currentMission.flow.map((hop, i) => `
+      <button class="flow-hop-btn ${i === 0 ? "active" : ""}" data-hop="${i}">${hop.label}</button>
+      ${i < currentMission.flow.length - 1 ? '<span class="flow-arrow">→</span>' : ''}
+    `).join("");
+
+    inspectBox.innerHTML = `<strong>${currentMission.flow[0].label}:</strong> ${currentMission.flow[0].detail}`;
+
+    flowContainer.querySelectorAll(".flow-hop-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        flowContainer.querySelectorAll(".flow-hop-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        const hop = currentMission.flow[+btn.dataset.hop];
+        inspectBox.innerHTML = `<strong>${hop.label}:</strong> ${hop.detail}`;
+      });
+    });
+
+    renderConsole();
+  }
+
+  // Render Terminal Replay
+  function renderConsole() {
+    const codeEl = document.getElementById("station-console-output");
+    codeEl.textContent = currentMission.consoles[currentConsoleView] || "";
+  }
+
+  // Setup Console Tab Switching
+  document.querySelectorAll(".t-tab").forEach((tab) => {
+    tab.addEventListener("click", () => {
+      document.querySelectorAll(".t-tab").forEach(t => t.classList.remove("active"));
+      tab.classList.add("active");
+      currentConsoleView = tab.dataset.view;
+      renderConsole();
+    });
+  });
+
+  renderSelector();
+  renderStage();
+});
+  </script>
+</body>
+</html>
