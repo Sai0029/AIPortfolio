@@ -1,0 +1,2 @@
+/* Keep the hero and journey visually continuous; remove the redundant horizontal telemetry rail. */
+.hero>.scanline{display:none}.hero{padding-bottom:78px}.journey-route{background:transparent;border-top:0;border-bottom:0}.journey-route:before{display:none}.journey-route{min-height:430px}.route-track:before{opacity:.32}.route-status{border-color:#82c9ec18}.journey-route+.universe{padding-top:105px}@media(max-width:850px){.hero{padding-bottom:52px}.journey-route{min-height:355px}.journey-route+.universe{padding-top:82px}}
